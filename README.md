@@ -9,7 +9,7 @@ Com a interatividade de colocar comoo check ✅ ou excluir ❌ nas suas tarefas!
 - CSS
 - JAVASCRIPT
 
-[Clique aqui para você aproveitar a lista do Fufuro 💫](https://choosealicense.com/licenses/mit/)
+[Clique aqui para você aproveitar a lista do Fufuro 💫](https://listinha-de-tarefas-fufuro.netlify.app/)
 
 <br>
 
