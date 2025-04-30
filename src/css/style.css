@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #ccd5ae;
+    --color-2: #e9edc9;
+    --color-3: #fefae0;
+    --color-4: #faedcd;
+    --color-5: #d4a373;
+    --color-6: #ffffff;
+    --color-7: #555454;
+    --color-8: #596b20;
+    --color-9: #a5a4a4;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 30px 15px;
+}
+
+.titulo {
+    font-size: 2rem;
+    color: var(--color-7);
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-fofuro {
+    color: var(--color-5);
+    position: relative;
+    max-width: min-content;
+}
+
+.name-fofuro::after{
+    content: '';
+    background: linear-gradient(90deg, var(--color-5) 0%, var(--color-1) 100%);
+    width: 100%;
+    height: 0.2rem;
+    border-radius: 20px;
+    display: block;
+    
+}
+
+/* h3 {
+    font-size: 2rem;
+    color: var(--color-7);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.name-fofuro::after {
+    content: '';
+    display: block;
+    max-width: 100%;
+    height: 0.2rem;
+    background: linear-gradient(90deg, var(--color-5) 0%, var(--color-1) 100%);
+    border-radius: 1rem;
+} */
+
+.container-principal {
+    border: 0.1rem solid var(--color-5);
+    padding: 20px;
+    background: var(--color-1);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ctn-img-input{
+    display: flex;
+    flex-direction: row;
+}
+
+.ctn-img-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+img {
+    background: #055a26;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.ctn-adicionar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.container-principal .ctn-adicionar input[type='text'] {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 0.1rem solid var(--color-3);
+    
+}
+
+.container-principal .ctn-adicionar button[type='submit'] {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 40px;
+    border: 0.1rem solid var(--color-3);
+    background: #055a26;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.container-principal .ctn-adicionar button[type='submit']:hover {
+    transform: scale(0.90);
+    color: var(--color-9);
+}
+
+.container-tarefas{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*adicionar essas divs no js*/
+
+.tarefa {
+    border: 0.1rem solid var(--color-5);
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--color-4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.button-excluir {
+    font-family: 'Poppins',sans-serif;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 0.1rem solid #571408;
+    background:#f15c41 ;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+}
+
+.ctn-excluir-feito {
+    display: flex;
+    gap: 10px;
+}
+
+.button-feito {
+    font-family: 'Poppins',sans-serif;
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: 0.1rem solid var(--color-8);
+    background:var(--color-1) ;
+    color: var(--color-7);
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+    
+}
+
+.button-excluir:hover, .button-feito:hover {
+    transform: scale(0.95);
+    color: var(--color-7);
+
+}
+
+.alert {
+    background-color: var(--color-2);
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    color: var(--color-7);
+    max-width: 300px;
+    border-radius: 20px;
+    display: none;
+}
