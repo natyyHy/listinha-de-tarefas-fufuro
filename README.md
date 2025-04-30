@@ -1,7 +1,7 @@
 # Listinha-de-tarefas-fufuro 🐈🗒️
 
 Um web site para você anotar suas tarefas ✏️
-Com a interatividade de colocar comoo check ✅ ou excluir ❌ nas suas tarefas!
+Com a interatividade de colocar como check ✅ ou excluir ❌ nas suas tarefas!
 
 ### Tecnologias
 
